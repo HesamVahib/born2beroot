@@ -45,3 +45,13 @@
 36. head -n 2 /etc/os-release          # check OS info
 37. /usr/sbin/aa-status                # app armor status
 38. ss -tulnp                          # check listening network sockets
+39. nano /etc/sudoers.d/<filename>     # edit sudo-specific configuration files
+40. nano /etc/login.defs               # configure password expiry policy
+41. sudo crontab -l                    # view cron schedule for root user
+
+42. sudo nano /etc/hostname            # change the hostname
+43. cd /var/log/sudo/00/00 && ls       # navigate to sudo logs directory
+44. sudo apt update                    # update the package index
+45. cd <nameofnewdirectory> && ls      # navigate into a new log directory
+46. cat log                            # view input log file
+47. cat ttyout                         # view out
