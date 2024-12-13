@@ -1,0 +1,47 @@
+1. IF ALL FAILS GO TO c2r6p1 FOR ORIGINAL
+
+2. encryption: ...
+
+3. root login: hvahib42
+   password: ...
+
+4. user account: hvahib
+   password: ...
+
+5. lsblk                               # check partition
+6. groupadd <name>                     # create group
+7. adduser <username>                  # add user
+8. usermod -aG <groupname> <username>  # add user to group
+9. cat -d :fi /etc/passwd              # check all users
+10. grep Port /etc/ssh/sshd_config     # check port settings
+11. systemctl status ssh               # check ssh status
+12. ufw status                         # check firewall
+13. ufw allow <rule>                   # add rule
+14. ufw delete <number>                # remove rule
+15. apparmor_status                    # check app armor
+16. ssh <username>@127.0.0.1 -p 4241   # connect to VM from terminal/ssh
+17. rm ~/.ssh/known_hosts              # removes known hosts in case of error
+18. chage -l <username>                # check password expiry info
+19. passwd -x 99999 <username>         # change password expiry
+20. nano /etc/pam.d/common-password    # check password requirements
+
+21. visudo                             # show password conditions
+22. nano /usr/local/bin/monitoring.sh  # show script
+23. crontab -u root -e                 # display crontab
+24. service cron start                 # start script
+25. service cron stop                  # stop script
+26. service cron status                # show script status
+27. systemctl disable cron             # disable cron on boot
+28. systemctl enable cron              # enable cron on boot
+29. sha256sum <filename>               # get signature
+
+30. hostname <new name>                # change hostname
+31. nano /etc/hostname                 # permanently set hostname
+32. nano /etc/hosts                    # update hostname mappings
+33. systemctl restart systemd-logind.service  # restart login service
+34. hostnamectl set-hostname <new name>       # set hostname using hostnamectl
+
+35. FROM SUBJECT:
+36. head -n 2 /etc/os-release          # check OS info
+37. /usr/sbin/aa-status                # app armor status
+38. ss -tulnp                          # check listening network sockets
